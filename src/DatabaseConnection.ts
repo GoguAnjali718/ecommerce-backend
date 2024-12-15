@@ -1,6 +1,6 @@
 import { Sequelize } from "sequelize";
 
-const sequelize = new Sequelize("myntra", "anjali", "AnjaliGOGU", {
+const sequelize = new Sequelize("myntra", "postgres", "Anjali118", {
   host: "localhost",
   dialect: "postgres",
 });
@@ -13,5 +13,9 @@ const connectToDatabase = async () => {
     console.error("Unable to connect to the database:", error);
   }
 };
+
+sequelize.sync().then(() => {
+  console.log("Database & tables created!");
+});
 
 export { sequelize, connectToDatabase };
