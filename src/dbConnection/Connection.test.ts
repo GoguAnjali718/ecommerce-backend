@@ -1,4 +1,4 @@
-import { sequelize, connectToDatabase } from "../DatabaseConnection";
+import { sequelize, connectToDatabase } from "./DatabaseConnection";
 
 describe("database connection", () => {
   it("should establish the database connection successfully", async () => {

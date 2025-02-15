@@ -1,7 +1,7 @@
 import express from "express";
 import request from "supertest";
-import { User } from "../models/User";
-import userRouter from "../routes/UserRoutes";
+import { User } from "./User";
+import userRouter from "../user/UserRoutes";
 
 jest.mock("../models/User", () => ({
   User: {

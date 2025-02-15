@@ -30,6 +30,15 @@ git clone <repository-url>
  npm install
 ```
 
+To Run the server:
+
+```
+npx ts-node server.ts or 
+tsc server.ts 
+after 
+node server.js
+```
+
 ## features:
 
 - User Profile : Manage user information such as username, password, confirmPassword.

@@ -1,0 +1,13 @@
+version: '3'
+services: 
+  postgres:
+    image: postgres:14.15
+    environment:
+      - POSTGRES_PASSWORD=Anjali118
+  backend:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
+    
